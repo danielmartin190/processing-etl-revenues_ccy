@@ -1,0 +1,50 @@
+name: "revenues_ccy"
+version: "1.0.0"
+config-version: 2
+
+profile: "default"
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros", "tests_macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  +materialized: "{{ env_var('DBT_MATERIALIZATION', 'ephemeral') }}"
+  +persist_docs:
+    relation: true
+    columns: true
+  revenues_ccy:
+    staging:
+      +schema: "finet_staging"
+    intermediate:
+      +schema: "finet_staging"
+    marts:
+      main:
+        +schema: "finet_main"
+      business:
+        +schema: "finet_business"
+
+
+tests:
+  +schema: metadata
+  +store_failures: true
+
+vars:
+  # Variables that must be entered with --vars. Sensible defaults have been selected.
+  # DBT VARS THAT NEED TO BE SET WHEN RUNNING YOUR MODELS GO HERE!
+
+  # Project settings
+  unit_tests_config:
+    input_format: "csv"
+    column_separator: "|"
+    line_separator: "\n"
+    type_separator: "::"
+    include_missing_columns: true

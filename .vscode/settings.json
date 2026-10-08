@@ -1,0 +1,9 @@
+{
+    "sqlfluff.executablePath": "${workspaceFolder}/.venv/bin/sqlfluff",
+    "editor.formatOnSave": false,
+    "files.associations": {
+        "*.sql": "jinja-sql"
+    },
+    "dbt.queryLimit": 100,
+    "dbt.enableNewLineagePanel": true,
+}

@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "bastienboutonnet.vscode-dbt",
+        "dorzey.vscode-sqlfluff",
+        "innoverio.vscode-dbt-power-user",
+        "shuworks.vscode-table-formatter"
+    ]
+}

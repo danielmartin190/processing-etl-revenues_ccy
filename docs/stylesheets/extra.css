@@ -1,0 +1,33 @@
+:root {
+    --md-primary-fg-color:        #D7192D;
+    --md-accent-fg-color:         #FCD100;
+    }
+
+@media only screen and (min-width: 76.25em) {
+.md-main__inner {
+    max-width: none;
+}
+.md-sidebar--primary {
+    left: 0;
+}
+.md-sidebar--secondary {
+    right: 0;
+    margin-left: 0;
+    -webkit-transform: none;
+    transform: none;
+}
+}
+
+progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+        appearance: none;
+
+    width: 250px;
+    height: 20px;
+    }
+progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    }

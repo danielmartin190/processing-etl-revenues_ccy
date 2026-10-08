@@ -1,0 +1,4 @@
+include:
+  - project: 'iberia-data/data-processing/common/gitlab-cicd'
+    ref: v1.1.4
+    file: 'dbt/default.yml'

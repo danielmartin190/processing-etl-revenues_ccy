@@ -1,0 +1,10 @@
+# IMPORTANT: Do not manually edit this file. Changes here will be overwritten by Copier.
+_commit: v2.0.0
+_src_path: git@github.com:Ib-data-platform/processing-template-dbt.git
+cicd_pipeline: default.yml
+finet_subvertical: finance
+owner: dmartin
+owner_email: next.dmartin@iberia.es
+project_name: Revenues CCY
+project_short_description: Calculate Revenues CCY for financial area
+vertical: finet

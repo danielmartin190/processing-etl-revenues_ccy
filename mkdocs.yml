@@ -1,0 +1,49 @@
+site_name: Iberia Data - revenues-ccy
+
+nav:
+  - Home: 'index.md'
+  - Technical:
+    - Summary: 'technical/summary.md'
+    - Sources: 'technical/sources.md'
+    - Models: 'technical/models.md'
+    - Process description: 'technical/process.md'
+    - Typical events and changes: 'technical/incidents.md'
+  - Functional:
+    - Summary: 'functional/summary.md'
+    - Final table fields: 'functional/fields.md'
+    - Functional considerations: 'functional/considerations.md'
+  - FAQs: 'faqs.md'
+  - Changelog: 'changelog.md'
+
+theme:
+  name: material
+  favicon: img/iberia.svg
+  logo: img/logo-iberia.png
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@8.12.0/dist/mermaid.min.js
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.details
+  - footnotes
+
+plugins:
+  - search
+  - print-site:
+      add_to_navigation: true
+      print_page_title: 'Print Site'
+      add_table_of_contents: true
+      toc_title: 'Table of Contents'
+      toc_depth: 2
+      enumerate_headings: false
+      add_cover_page: true
+      add_print_site_banner: true
