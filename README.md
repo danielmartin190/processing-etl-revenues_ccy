@@ -87,3 +87,4 @@ copier update -r vx.x.x --trust
 - Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+# processing-etl-revenues_ccy
